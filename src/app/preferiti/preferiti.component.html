@@ -1,0 +1,6 @@
+<div *ngIf="preferiti.length > 0">
+    <ul>
+        <li *ngFor="let p of preferiti">{{p.title}} <button type="button" (click)="elimina(p)">X</button></li>
+    </ul>
+    <button type="button" (click)="svuota()">Svuota</button>
+</div>

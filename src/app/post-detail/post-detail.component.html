@@ -1,0 +1,8 @@
+<div *ngIf="post">
+    <h3>{{post.title}}</h3>
+    <p>{{post.category}}</p>
+    <p style="font-style: italic;">Data di publicazione: {{post.date | date: "MMM dd,yyyy"}}</p>
+    <p>{{post.body}}</p>
+    <button (click)="aggPref(post)">Aggiungi a preferiti</button>
+
+</div>

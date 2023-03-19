@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 70%;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+
+/* preferiti */
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: solid 1px rgb(234, 234, 234);;
+    margin: 2px 0;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+ul li button{
+    border: none;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1em;
+}
+
+ul + button{
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: rgb(199, 13, 64);
+    border-radius: 3px;
+}
+
+/* filtri */
+
+form{
+    margin: 13px 0;    
+}
+
+input[type="radio"]{
+    display: none;
+
+}
+
+form label{
+    background-color: none;
+    border: solid 1px rgb(126, 126, 126);
+    padding: 8px;
+}
+
+form label:first-of-type{
+    border-radius: 5px 0 0 5px;
+}
+
+form label:last-of-type{
+    border-radius: 0 5px 5px 0;
+}
+
+form label:hover{
+    color: white;
+    background-color: rgb(126, 126, 126);
+}
+
+input[type="radio"]:checked + label{
+    color: white;
+    background-color: rgb(126, 126, 126);
+}
+
+/* posts */
+
+app-post-detail > div{
+    border: solid 1px rgb(234, 234, 234);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+app-post-detail > div button{
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: rgb(23, 95, 252);
+    border-radius: 3px;
+}

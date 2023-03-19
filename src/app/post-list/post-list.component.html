@@ -1,0 +1,9 @@
+<div>
+    <form>
+        <input type="radio" id="tutto" name="display" (click)="ngOnInit()" checked><label for="tutto">Tutto</label>
+        <input type="radio" id="viaggi" name="display" (click)="display('travel')"><label for="viaggi">Viaggi</label>
+        <input type="radio" id="cucina" name="display" (click)="display('food')"><label for="cucina">Cucina</label>
+        <input type="radio" id="moda" name="display" (click)="display('fashion')"><label for="moda">Moda</label>
+    </form>
+    <app-post-detail *ngFor="let p of posts" [post]="p"></app-post-detail>
+</div>
